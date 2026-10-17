@@ -1,0 +1,26 @@
+{
+  "name": "@qmoosa/yield-protocol",
+  "version": "1.0.0",
+  "description": "Automated Yield Aggregation & Vaults — ERC-4626 standard math, share pricing & invariant gates",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/protocol.test.mjs",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "yield",
+    "vault",
+    "erc4626",
+    "defi"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
