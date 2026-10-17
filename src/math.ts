@@ -112,7 +112,7 @@ export class YieldMath {
   ): number {
     const assetsWithVirtual = totalAssets + this.VIRTUAL_ASSETS;
     const sharesWithVirtual = totalShares + virtualSharesOffset;
-    return Number((assetsWithVirtual * 10_000n) / sharesWithVirtual) / 10_000;
+    return Number((assetsWithVirtual * virtualSharesOffset * 10_000n) / sharesWithVirtual) / 10_000;
   }
 
   /**
